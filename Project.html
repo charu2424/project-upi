@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="profile">
+                <img src="profile pic.png" alt="Profile Picture">
+                <p>Jennie C.</p>
+                <p>Rocket GmbH</p>
+                <p>Balance: £246,030</p>
+            </div>
+            <nav class="menu">
+                <a href="#">Transactions</a>
+                <a href="#">Payments</a>
+                <a href="#">Cards</a>
+                <a href="#">Account</a>
+                <a href="#">Administration</a>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <div class="payments">
+                <h1>Payments</h1>
+                <p>Use the search bar to complete your payment</p>
+                <input type="text" placeholder="IBAN, account number, etc.">
+                <input type="text" placeholder="City">
+                <input type="text" placeholder="Category">
+                <button>Search</button>
+                <div class="payment-options">
+                    <button>Transfer</button>
+                    
+                    <button>Office bills</button>
+                    <button>Electricity bills</button>
+                    <button>Gas bills</button>
+                    <button>Water bills</button>
+                </div>
+            </div>
+            <div class="templates">
+                <h2>Templates</h2>
+                <address>55 School Lane, gurugram</address>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Type</th>
+                            <th>Details</th>
+                            <th>Account</th>
+                            <th>Date</th>
+                            <th>Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Insurance</td>
+                            <td>10304</td>
+                            <td>Personal account</td>
+                            <td>7 Sep, 20</td>
+                            <td>-£70.24</td>
+                        </tr>
+                        <tr>
+                            <td>Electricity</td>
+                            <td>58049850</td>
+                            <td>Personal account</td>
+                            <td>Sep, 20</td>
+                            <td>£102</td>
+                        </tr>
+                        <tr>
+                            <td>Water</td>
+                            <td>2020304</td>
+                            <td>Personal account</td>
+                            <td>5 Sep, 20</td>
+                            <td>-£10.50</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+        <aside class="payment-form">
+            <h2>New Payment</h2>
+            <div class="form-group">
+                <label for="smart-name">Smart Name</label>
+                <div class="card-info">
+                    <span>**** 4903</span>
+                    <span>£10,540</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="mpin">MPIN</label>
+                <div class="card-info">
+                    <span>**** 3453</span>
+                    <span>Spider foundry</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="amount">Amount</label>
+                <input type="number" id="amount" value="204">
+                <select>
+                    <option value="GBP">GBP</option>
+                </select>
+            </div>
+            <button class="btn btn-success">Transfer</button>
+            <button class="btn btn-outline-secondary">Save as template</button>
+        </aside>
+    </div>
+</body>
+</html>
